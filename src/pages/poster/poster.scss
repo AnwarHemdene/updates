@@ -1,0 +1,48 @@
+page-poster {
+    ion-icon::before {
+        display: inline-block;
+        font-size: 500%;
+    }
+   
+    .aide{
+        background: rgba(224, 253, 28, 0.35);
+        
+    }
+    .foyer{
+        background: rgba(145, 202, 77 , 0.37);
+        
+    }
+    .blessure{
+        background: rgba(243, 208, 97 , 0.43);
+        
+    }
+    .danger{
+        background: rgba(255, 6 , 6 , 0.37);
+        
+    }
+    .autre{
+        background: rgba(148, 186, 222, 0.37);
+        
+    }.aide {
+        background: rgba(224, 253, 28, 0.35);
+    }
+    .item-md {
+        padding-left: 16px;
+        padding-right: 0;
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: normal;
+        text-transform: none;
+        color: #000;
+        background-color: #fff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .item-block {
+        margin: 0;
+        padding: 0;
+        text-align: initial;
+    }
+}

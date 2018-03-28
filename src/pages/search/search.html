@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>search</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-searchbar (ionInput)="getUsers($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      
+      <!--<span class="righttext">{{ room.name }}</span>
+      <span class="lefttext" >access : {{room.accesslevel}}</span>
+     <span> <button (click)="joinRoom(room.idRoom)" ion-button color="danger" outline>Join this room</button></span>
+      
+     <h2>{{ user.displayName }}</h2>
+     <p>{{ user.email }}</p>-->
+
+     <ion-avatar item-start>
+      <img src="{{user.imageUrl}}">
+    </ion-avatar>
+    <h2>{{user.displayName}}</h2>
+    <button ion-button (click)="sendMessage(user.id)" >Message</button>
+    <button ion-button (click)="sendInvitation(user.id)" item-end >add to contact</button>
+
+    </ion-item>
+  </ion-list>
+</ion-content>

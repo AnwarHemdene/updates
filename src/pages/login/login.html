@@ -1,0 +1,81 @@
+<!-- --Splash animations -- -->
+
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/imgs/hanimo-logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+<!-- -- End Splash animations -- -->
+
+
+
+<ion-content class="background">
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col >
+          <ion-item>
+            <ion-avatar class="center" >
+              <img src="assets/imgs/hanimo-logo1.jpg">
+            </ion-avatar>
+            <p class="connecter-vous-text"> Connectez Vous</p>
+          </ion-item>
+            </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+              <ion-item>
+                <ion-label floating>Adresse Email</ion-label>
+                <ion-input type="email" [(ngModel)]="email" flex ></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Mot de passe</ion-label>
+                <ion-input type="password" [(ngModel)]="password" ></ion-input>
+              </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+              <ion-item>
+                  <div class="reverse">
+                     <a>mot de passe oublié?</a></div>
+              
+              </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="connecter" >      
+              <button class="login-button" (click)="signIn(email,password)" ion-button color="danger" round outline>Se Connecter</button>
+              <hr>  
+              <p >Ou connecter vous via</p>
+              
+        </ion-col>
+      </ion-row>   
+      <ion-row justify-content-star>
+        <ion-col > 
+              <button class="facebook-button" (click)="facebookLogin()" ion-button color="Primary" outline icon-left>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <div>Facebook</div>
+              </button>
+        </ion-col>
+        <ion-col >
+              <button class="google-button" (click)="googlePlusLogin()" ion-button color="danger" outline  icon-left>
+                <ion-icon name="logo-google"></ion-icon>
+                <div>Google+</div>
+              </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col> 
+              <!-- <b> Ou </b> -->
+              <button (click)="createAcount()" block ion-button color="secondary"  icon-left>
+               
+                <div>Creer votre compte</div>
+              </button> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card> 
+</ion-content>

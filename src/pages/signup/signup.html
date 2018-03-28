@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    Creer un compte
+  </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+
+
+    <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col >
+              <ion-item>
+                <ion-avatar class="center" >
+                  <img src="assets/imgs/edit-profile.png">
+                </ion-avatar>
+              </ion-item>
+                </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label floating>Nom</ion-label>
+                    <ion-input type="text" [(ngModel)]="user.nom" ></ion-input>
+                </ion-item>
+        
+                <ion-item>
+                    <ion-label floating>Prénom</ion-label>
+                    <ion-input type="text" [(ngModel)]="user.prenom" ></ion-input>
+                </ion-item> 
+                 <ion-item>
+                  <ion-label floating>Pseudo</ion-label>
+                  <ion-input type="text" [(ngModel)]="user.displayName" ></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label floating>Adresse E-mail</ion-label>
+                      <ion-input type="text" [(ngModel)]="user.email" ></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label floating>Mot de passe</ion-label>
+                      <ion-input type="password" [(ngModel)]="user.password" ></ion-input>
+                  </ion-item>
+      
+                <ion-item>
+                    <ion-label floating>confirmer le mot de passe</ion-label>
+                    <ion-input type="password" [(ngModel)]="verifPassword" ></ion-input>
+                </ion-item>
+        
+                
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="connecter" >      
+                  <button class="login-button" ion-button color="danger" round outline (click)="register(user)" >S'inscrire</button>
+                  
+                  
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+          </ion-card>
+
+
+
+
+<!-- 
+  <h1>Hanimo</h1>
+  
+    <ion-card>
+  
+      <ion-card-header>
+        Creer votre compte
+      </ion-card-header>
+  
+      <ion-card-content>
+          <ion-list no-lines>
+  
+         
+         
+
+
+      <br>
+          <button ion-button color="primary" block (click)="register(user)" >S'inscrire</button>      
+  
+          </ion-list>
+      </ion-card-content>
+    </ion-card> -->
+  
+  </ion-content>

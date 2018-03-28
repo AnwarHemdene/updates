@@ -1,0 +1,168 @@
+page-signup {
+    // .scroll-content{
+    //     text-align: center;
+    // }
+    // ion-card.card{
+    //     background: rgba(232, 230, 230, 0.6px);
+    //     border-radius: 10px;
+    // }
+    // .item{
+    //     background: rgba(232, 230, 230, 0px);
+    // }
+    // ion-input{
+    //     border-bottom: rgb(89, 77, 253) solid 1px;
+    // }
+    // h1{
+    //     color: #000;
+    //     font-size: 3em;
+    //     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //     font-weight: lighter;
+    // }
+    // item-input{
+    //     color: #000;
+    // }
+
+    // .background{
+    //     background: linear-gradient(10deg,#4E5EFC,#4EE7FC);
+    // }
+    // .scroll-content{
+    //     text-align: center;
+    // }
+    // ion-card.card{
+    //     background: rgba(232, 230, 230, 0.6px);
+    //     border-radius: 10px;
+    // }
+    // .item{
+    //     background: rgba(232, 230, 230, 0px);
+    // }
+    // ion-input{
+    //     border-bottom: #FD4D73 solid 1px;
+    // }
+    // h1{
+    //     color: #000;
+    //     font-size: 3em;
+    //     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //     font-weight: lighter;
+    // }
+
+    ion-content{
+        // background-image:url('../../assets/imgs/bg3.jpeg');
+
+        // #4fa5d2   #4fa5d2 
+        // linear-gradient(to bottom right,#3e6c60, #569358);
+        //  url('../../assets/imgs/bg.png');
+    }
+    // ion-navbar {
+    //     background: rgba(232, 230, 230, 0px);
+    //     opacity: 0;
+
+    //     color: #f5f5f5 !important;
+    //     padding-top: 50px;
+    //     // visibility: collapse;
+        
+    // }
+    // .scroll-content{
+    //     text-align: justify;
+    // }
+
+    // Avatar
+    .center{
+        display: block;
+        margin-left: 35%;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    .connecter{
+        text-align: center;
+    }
+
+    .col {
+        padding: 0px;}
+
+    // $toolbar-md-title-text-color: bisque ;
+    // .nav-bar-block, .bar {
+    //     background-color:  #f5f5f5  !important;
+    //   }
+    //   ion-card.card{
+          
+    //     background: rgba(232, 230, 230, 0.1);
+    //     border-radius: 10px;
+    //     // padding-top: 10px;
+    //     color:#3e6c60;
+    //     // padding-bottom: 105px;
+    // }
+    // .item {
+    //     background: rgba(232, 230, 230, 0px);
+    //     color: #000;
+    //     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //     font-weight: lighter;
+    // }
+    // item-md{
+    //     color: #000;
+    // }
+    // ion-input{
+    //     // border-bottom: rgb(255, 255, 255) solid 1px;
+        
+    // }
+    // ion-title{
+    //     color:  #3e6c60 !important;
+    //     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //     font-weight: bold;
+    // }
+    // .bar-button{
+    //     color: #3e6c60;}
+    // .scroll-content.item .center{
+    //     align-content: center;
+    //     color: #52524a;
+    // }
+    // ion-button{
+    //     align-items: center;
+    // }
+    // .item-label-stacked .input-wrapper, .item-label-floating .input-wrapper{
+    //     color: bisque;
+    // }
+    .item-md ion-avatar ion-img, .item-md ion-avatar img {
+        border-radius: inherit;
+        // overflow: hidden;
+        width: 50%;
+        height: 20%;
+        // padding-left: 2.7rem;
+    }
+    // .item-input ion-input, .item-input ion-textarea ion-password, 
+    // .item-label-stacked, .input-wrapper, .item-label-floating,.input-wrapper{
+    //     position: static;
+    //     width: 70%;
+    // }
+    // .button-outline-md {
+    //     border-width: 1px;
+    //     border-style: solid;
+    //     border-color: #f5f5f5;
+    //     color: #d6d6d6;
+    //     background-color: transparent;
+    // }
+    // .toolbar-title-md {
+    //     padding: 0 12px;
+    //     font-size: 2rem;
+    //     font-weight: 500;
+    //     color: #e0b1bc;
+    // }
+    // .card-md ion-list {
+    //     // margin-bottom: 0;
+    //     // margin-top: 40%;
+    // }
+        
+    .login-button {
+        border-width: 2px;
+        // border-style: bold;
+        border-color: #53524A;
+        color: #685D49;
+        // background-color: transparent;
+        }
+    
+                //color border input with orange solide with 1 px 
+    ion-input{
+        border-bottom: #53524A solid 1px;
+        
+      }
+}

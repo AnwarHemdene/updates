@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar  color="primary">
+        <button ion-button icon-only menuToggle  >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title> Poster une annonce</ion-title>
+  </ion-navbar> 
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="aide" (click)="presentPrompt()">
+      <ion-thumbnail item-start>
+        <ion-icon name="md-paw"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Animal besoin d'aide</h2>
+    </ion-item>
+    <ion-item class="foyer" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+        <ion-icon name="ios-home"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Animal cherchant un foyer</h2>
+    </ion-item>
+    <ion-item class="blessure" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+        <ion-icon name="md-medkit"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Blessure ou Maladie</h2>
+    </ion-item>
+    <ion-item class="danger" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+        <ion-icon name="ios-nuclear"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Animal en Danger</h2> 
+    </ion-item>
+    <ion-item class="autre" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+         <ion-icon name="ios-alert"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Autre</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

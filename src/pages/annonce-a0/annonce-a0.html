@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>annonceA0</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+        <ion-list no-lines>
+            <ion-list-header> Poster votre annonce </ion-list-header> 
+            <ion-item>
+              <ion-label floating >Titre de l'annonce</ion-label>
+              <ion-input [(ngModel)]="annonce.titleAnnonce" type="text"> </ion-input>
+            </ion-item> 
+            <ion-item>
+              <ion-label floating >Votre description</ion-label>
+              <ion-textarea [(ngModel)]="annonce.descAnnonce" type="text"> </ion-textarea>
+            </ion-item>
+              
+            <ion-item>
+              <button ion-button (click)="capture()">Lets take a picture!</button>
+              <img [src]="captureDataUrl[0]" *ngIf="captureDataUrl[0]"/>
+
+              <button ion-button (click)="pickImage()">pickImage</button>
+          </ion-item>
+  
+            <ion-item>
+                <button (click)="publierAnnonce(annonce)" ion-button round>Publier</button>
+            </ion-item>
+          </ion-list>
+    </ion-card-content>
+  </ion-card>
+  </ion-content>

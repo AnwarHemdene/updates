@@ -14,6 +14,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class TabsPage {
 
+  // splash= true;
+
   tab1Root = HomePage;
   tab2Root = MessagesPage;
   tab3Root = PosterPage;
@@ -34,7 +36,7 @@ export class TabsPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
+    // this.splash= false ;
   }
 
   openPage(p){

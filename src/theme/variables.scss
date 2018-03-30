@@ -13,7 +13,7 @@ $app-direction: ltr;
 
 
 @import "ionic.globals";
-
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Poiret+One|Sacramento');
 
 // Shared Variables
 // --------------------------------------------------
@@ -38,8 +38,33 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  facebook :  #4267b2,
+  google : rgb(200, 68, 57),
+  maron : #4f331b,
+  orange- : #F6AA24,
+  orange-white: #fffaca,
+  gris: #685D49,
+  gris-foncee : #53524A,
+  aide: #ffd700,
+  foyer: #ff7f50,
+  blessure: #008000,
+  sos: #cc0000,
+  autre: #808080,
+  sandy-brown : #F5BA52,
+pale-goldenrod: #F4EBC9,
+dim-gray: #5E584B,
+custm-white: #FBFBFB,
+burly-wood: #E4CE9E,
 );
+
+
+
+
+
+
+
+
     // Avatar
     .center{
       display: block;

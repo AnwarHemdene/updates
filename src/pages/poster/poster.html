@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar  color="primary">
+  <ion-navbar  color="orange-white">
         <button ion-button icon-only menuToggle  >
           <ion-icon name="menu"></ion-icon>
         </button>
@@ -8,36 +8,94 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item class="aide" (click)="presentPrompt()">
-      <ion-thumbnail item-start>
-        <ion-icon name="md-paw"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Animal besoin d'aide</h2>
-    </ion-item>
-    <ion-item class="foyer" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-        <ion-icon name="ios-home"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Animal cherchant un foyer</h2>
-    </ion-item>
-    <ion-item class="blessure" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-        <ion-icon name="md-medkit"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Blessure ou Maladie</h2>
-    </ion-item>
-    <ion-item class="danger" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-        <ion-icon name="ios-nuclear"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Animal en Danger</h2> 
-    </ion-item>
-    <ion-item class="autre" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-         <ion-icon name="ios-alert"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Autre</h2>
-    </ion-item>
-  </ion-list>
+
+
+<!-- BESOIN D'AIDE -->
+
+  <ion-card class="aide" (click)="presentPrompt()" color="#C3CCB2">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button clear ion-button >
+            <img src="assets/icon/aide.png" >
+          </button>
+        </ion-col>
+        <ion-col >
+          <ion-label >Besoin d'aide</ion-label>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+      
+  </ion-card>
+
+
+  <!-- BESOIN foyer -->
+  <ion-card class="foyer" (click)="presentPrompt()" color="#4D898F">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button clear ion-button>
+                <img src="assets/icon/foyer.png" > 
+              </button>
+          </ion-col>
+          <ion-col>
+            <ion-label>Cherchant un foyer</ion-label>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+        
+    </ion-card>
+  <!-- BLESSURE -->
+
+  <ion-card class="blessure" (click)="presentPrompt()" color="#BF983E">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button clear ion-button>
+                <img src="assets/icon/blessure.png" > 
+            </button>
+          </ion-col>
+          <ion-col>
+            <ion-label>Blessure ou Maladie</ion-label>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+        
+    </ion-card>
+
+  <!-- URGENT  DANGER-->
+
+  <ion-card class="danger" (click)="presentPrompt()" color="#9B5337">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button clear ion-button>
+                    <ion-icon name="ios-nuclear"  isActive="false"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col>
+            <ion-label>En Danger</ion-label>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+        
+    </ion-card>
+
+  <!-- AUTRE -->
+  <ion-card class="autre" (click)="presentPrompt()" color="#333537">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button clear ion-button>
+                    <ion-icon name="ios-alert"  isActive="false"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col>
+            <ion-label>Autre</ion-label>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+        
+    </ion-card>
+
 </ion-content>

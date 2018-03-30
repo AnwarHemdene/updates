@@ -1,14 +1,13 @@
 
 import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { UsercrudProvider } from "../../providers/usercrud/usercrud";
 import { User } from "../../models/user";
 import { Invitation } from "../../models/invitation";
 
 import { AngularFireDatabase } from 'angularfire2/database';
-import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 
 @Component({
@@ -24,7 +23,7 @@ export class SearchPage {
   public usersRef: firebase.database.Reference = firebase.database().ref('/users');
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private afDatabase: AngularFireDatabase,
+
     private userCrud: UsercrudProvider,
     private storage: Storage) {
       

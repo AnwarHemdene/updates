@@ -21,39 +21,56 @@ export class MyApp {
 
   rootPage:any;
 
+
+  //for splash animations
+  // splash=true;
+  //end
+
   pages: Array<{title: string, component: any}>;
 
   constructor(platform: Platform, statusBar: StatusBar,
     loadCnt : LoadingController,
     splashScreen: SplashScreen,
     private afAuth: AngularFireAuth) {
-    platform.ready().then(() => {
+    
+      platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      
     });
-
+    
     // let loader = loadCnt.create({
     //   content: "wait ...",duration : 1500 
     // });
     // loader.present();
     
+
+
     this.pages = [
       { title: 'Home', component: TabsPage },
       { title: 'Les annonces', component: AnnoncesPage },
       { title: 'Invitations', component: InvitationPage },
       { title: 'Messages', component: MessagesPage },
     ];
+    // this.splash = false;
+
+    
 
     this.afAuth.auth.onAuthStateChanged(user => {
+
       if(user){
-        this.rootPage=TabsPage;
+        
+        this.rootPage=TabsPage ;
+        // this.splash= false;
         console.log('auth state changed');
         console.log(user)
       }else{
         console.log("auth state changed erru");
+      
         this.rootPage=LoginPage;
+        // this.splash= false;
       }
     });
 
@@ -62,7 +79,17 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
+    // this.splash = false;
     this.nav.setRoot(page.component);
   }
+
+  // ionViewDidLoad() {
+
+   
+  //     this.splash = false;
+  
+  
+  // }
+
 }
 

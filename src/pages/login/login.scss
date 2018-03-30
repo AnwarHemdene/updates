@@ -6,7 +6,7 @@ page-login
     .connecter-vous-text {
       padding-top: 10px;
       font-size: 2.3rem;
-      color: #52524a;
+      color: color($colors, gris-foncee);;
       text-align: center;
   }
 
@@ -17,7 +17,7 @@ page-login
 
 //color border input with orange solide with 1 px 
 ion-input{
-  border-bottom: #F6AA24 solid 1px;
+  border-bottom: color($colors, orange-) solid 1px;
   
 }
 
@@ -48,16 +48,16 @@ ion-input{
 .login-button {
   border-width: 2px;
   // border-style: bold;
-  border-color: #f1942a;
-  color: #f1942a;
+  border-color: color($colors, orange-);
+  // color: #f1942a;
   // background-color: transparent;
 }
 //Login with facebook button 
 .facebook-button {
   // border-width: 2px;
   // border-style: bold;
-  border-color: #4267b2;
-  color: #4267b2;
+  border-color: color($colors, facebook);
+  // color: #4267b2;
   // background-color: transparent;
 }
 
@@ -65,8 +65,8 @@ ion-input{
 .google-button {
   // border-width: 2px;
   // border-style: bold;
-  border-color:  rgb(200, 68, 57);;
-  color:  rgb(200, 68, 57);;
+  border-color: color($colors, google);
+  // color:  rgb(200, 68, 57);;
   // background-color: transparent;   
 }
 

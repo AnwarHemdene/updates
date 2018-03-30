@@ -45,12 +45,12 @@ export class LoginPage {
   private userProvider: UsercrudProvider) {
     
   }
-
   ionViewDidLoad() {
-
     setTimeout(() => {
-      this.splash = false;
-    }, 4000);  }
+      this.splash= false ;
+    }, 4000);
+    // 
+  }
 
   signIn(email,password){
 

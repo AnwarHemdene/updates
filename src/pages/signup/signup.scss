@@ -155,14 +155,14 @@ page-signup {
     .login-button {
         border-width: 2px;
         // border-style: bold;
-        border-color: #53524A;
-        color: #685D49;
+        border-color: color($colors, gris-foncee);
+        color: color($colors, gris);
         // background-color: transparent;
         }
     
                 //color border input with orange solide with 1 px 
     ion-input{
-        border-bottom: #53524A solid 1px;
+        border-bottom: color($colors, gris-foncee) solid 1px;
         
       }
 }

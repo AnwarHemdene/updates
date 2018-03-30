@@ -47,7 +47,7 @@
       </ion-row>
       <ion-row>
         <ion-col class="connecter" >      
-              <button class="login-button" (click)="signIn(email,password)" ion-button color="danger" round outline>Se Connecter</button>
+              <button class="login-button" (click)="signIn(email,password)" ion-button color="orange-" round outline>Se Connecter</button>
               <hr>  
               <p >Ou connecter vous via</p>
               
@@ -55,13 +55,13 @@
       </ion-row>   
       <ion-row justify-content-star>
         <ion-col > 
-              <button class="facebook-button" (click)="facebookLogin()" ion-button color="Primary" outline icon-left>
+              <button class="facebook-button" (click)="facebookLogin()" ion-button color="Primary" outline icon-left color="facebook">
                 <ion-icon name="logo-facebook"></ion-icon>
                 <div>Facebook</div>
               </button>
         </ion-col>
         <ion-col >
-              <button class="google-button" (click)="googlePlusLogin()" ion-button color="danger" outline  icon-left>
+              <button class="google-button" (click)="googlePlusLogin()" ion-button color="google" outline  icon-left>
                 <ion-icon name="logo-google"></ion-icon>
                 <div>Google+</div>
               </button>

@@ -101098,6 +101098,76 @@ ion-navbar.toolbar {
   }
 }
 
+page-annonce-a0 .img-place {
+  width: 100%;
+  height: 12em;
+  background: black;
+}
+
+page-annonce-a0 .date {
+  padding: .9em 1em;
+  text-align: right;
+  color: #666;
+}
+
+page-annonce-a0 article h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+page-annonce-a0 .category {
+  border-bottom: 2em solid #0062A1;
+  border-left: .5em solid transparent;
+  height: 0;
+  display: block;
+  color: white;
+  line-height: 2em;
+  position: absolute;
+  left: -1.5em;
+  top: .5em;
+  padding: 0 1em;
+  text-transform: uppercase;
+  margin-left: 1em;
+}
+
+page-annonce-a0 .category:before {
+  content: '';
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: .5em solid #0062A1;
+  border-left: .5em solid transparent;
+  position: absolute;
+  left: -.5em;
+  top: 2em;
+}
+
+page-annonce-a0 .category:after {
+  content: '';
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-left: .5em solid #0062A1;
+  position: absolute;
+  right: -.5em;
+  top: 0;
+}
+
+page-annonce-a0 .category.cat-work {
+  border-bottom-color: #9B5337;
+}
+
+page-annonce-a0 .category.cat-work:before {
+  border-top-color: #9B5337;
+}
+
+page-annonce-a0 .category.cat-work:after {
+  border-left-color: #9B5337;
+}
+
 page-complete-profile .card {
   margin-top: 10%;
 }
@@ -101833,6 +101903,10 @@ page-poster .card-md {
   font-size: 1.4rem;
 }
 
+page-poster .col {
+  text-align: center;
+}
+
 page-poster .button-clear-md {
   width: 100%;
   height: 100%;
@@ -101846,23 +101920,23 @@ page-poster .label-md {
 }
 
 page-poster .aide {
-  background: #ffd700;
+  background: #C3CCB2;
 }
 
 page-poster .foyer {
-  background: #ff7f50;
+  background: #4D898F;
 }
 
 page-poster .blessure {
-  background: #008000;
+  background: #BF983E;
 }
 
 page-poster .danger {
-  background: #cc0000;
+  background: #9B5337;
 }
 
 page-poster .autre {
-  background: #808080;
+  background: #333537;
 }
 
 page-poster .item-md {

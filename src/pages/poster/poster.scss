@@ -20,7 +20,9 @@ page-poster {
             font-size: 1.4rem;
             // background: #fef8ca;
     }
-
+    .col{
+        text-align: center;
+    }
 
    
     .button-clear-md {
@@ -36,30 +38,30 @@ page-poster {
 
    
     .aide{
-         background: color($colors, aide)
+         background: #C3CCB2;
         // box-shadow:  0 5px 8px 0  #fef65b, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
         
     }
     .foyer{
-        background: color($colors,foyer);
+        background: #4D898F;
         // box-shadow:  0 5px 8px 0 #ff7f50, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         
     }
     .blessure{
-        background: color($colors,blessure);
+        background: #BF983E;
         // box-shadow:  0 5px 8px 0 #008000, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         
     }
     .danger{
-        background: color($colors,sos);
+        background: #9B5337;
         // box-shadow:  0 5px 8px 0 #cc0000, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         
     }
     .autre{
-        background: color($colors,autre);
+        background:#333537;
         // box-shadow:  0 5px 8px 0 #3b5998, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         

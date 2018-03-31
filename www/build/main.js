@@ -1266,12 +1266,35 @@ var AnnonceA0Page = (function () {
             }
         }, function (err) { console.log(err); });
     };
+    // async upload(filename) {
+    //   let storageRef = firebase.storage().ref();
+    //   // Create a timestamp as filename
+    //   //const filename = Math.floor(Date.now() / 1000);
+    //   // Create a reference to 'images/todays-date.jpg'
+    //   filename = filename+".jpg"
+    //   console.log(filename);
+    //   const imageRef = storageRef.child('annoncesimages/'+filename);
+    //   await imageRef.putString(this.captureDataUrl, firebase.storage.StringFormat.DATA_URL).then((snapshot)=> {
+    //     console.log("image ref : "+imageRef);
+    //     console.log(snapshot);
+    //     console.log(snapshot.downloadURL);
+    //     this.imgUrl = snapshot.downloadURL;
+    //    });
+    // }
+    //Slides :
+    AnnonceA0Page.prototype.goToSlide = function () {
+        this.slides.slideTo(2, 500);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */])
+    ], AnnonceA0Page.prototype, "slides", void 0);
     AnnonceA0Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-annonce-a0',template:/*ion-inline-start:"/home/anwar/hanimo2/src/pages/annonce-a0/annonce-a0.html"*/'<ion-header>\n\n  <ion-navbar color="sandy-brown">\n    <ion-title>Animal En Danger</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-card>\n     \n\n\n\n    <ion-card-header>\n        <div class="category cat-work">Danger</div>\n        <div class="date">Poster votre annonce </div>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n            <ion-item>\n                <ion-label floating >Titre de l\'annonce</ion-label>\n                <ion-input [(ngModel)]="annonce.titleAnnonce" type="text"> </ion-input>\n              </ion-item> \n        </ion-row>\n        <ion-row>\n            <ion-item>\n                <ion-label floating >Votre description</ion-label>\n                <ion-textarea [(ngModel)]="annonce.descAnnonce" type="text"> </ion-textarea>\n              </ion-item>\n        </ion-row>\n        <ion-row>\n            <ion-item>\n                <button ion-button (click)="capture()">Lets take a picture!</button>\n                <img [src]="captureDataUrl[0]" *ngIf="captureDataUrl[0]" class="img-place"/>\n  \n                <button ion-button (click)="pickImage()" >pickImage</button>\n            </ion-item>\n        </ion-row>\n        <ion-row>\n            <ion-item>\n                <button (click)="publierAnnonce(annonce)" ion-button round>Publier</button>\n            </ion-item>\n        </ion-row>\n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n  </ion-content>\n'/*ion-inline-end:"/home/anwar/hanimo2/src/pages/annonce-a0/annonce-a0.html"*/,
+            selector: 'page-annonce-a0',template:/*ion-inline-start:"/home/anwar/hanimo2/src/pages/annonce-a0/annonce-a0.html"*/'<ion-header>\n\n  <ion-navbar color="sandy-brown">\n    <ion-title>Animal En Danger</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-card>\n     \n\n\n\n    <ion-card-header>\n        <div class="category cat-work">Danger</div>\n        <div class="date">Poster votre annonce </div>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n            <ion-item>\n                <ion-label floating >Titre de l\'annonce</ion-label>\n                <ion-input [(ngModel)]="annonce.titleAnnonce" type="text"> </ion-input>\n              </ion-item> \n        </ion-row>\n        <ion-row>\n          <ion-col col-lg-2>\n            <ion-item >\n                <ion-label floating >Votre description</ion-label>\n                <ion-textarea [(ngModel)]="annonce.descAnnonce" type="text" rows="4" cols="50"> </ion-textarea>\n              </ion-item>\n            </ion-col>\n            <ion-col col-3>\n              <button ion-button clear class="button-md-marker">\n                <ion-icon name="md-locate" color="sos" class="ion-md-locate-marker"></ion-icon>\n              </button>\n            </ion-col>\n        </ion-row>\n        \n        <ion-row>\n            <ion-item>\n                <button ion-button  (click)="capture()" color="sandy-brown">\n                  <ion-icon name="ios-camera"> Camera !</ion-icon></button>\n                <img [src]="captureDataUrl[0]" *ngIf="captureDataUrl[0]" />\n                 <button ion-button (click)="pickImage()" color="sandy-brown">\n                  <ion-icon name="ios-image">Gallerie !</ion-icon></button>\n\n                <ion-row>\n                    <ion-slides pager>\n                        <ion-slide>\n                          <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350">\n                        </ion-slide>\n                        <ion-slide>\n                            <img src="https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg">\n                        </ion-slide>\n                        <ion-slide>\n                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiuSZNSTgykfjYwWHRasiZ-i77rzgqOUNm8rxu-_O4Q4MaLTbC">\n                        </ion-slide>\n                      </ion-slides>\n                </ion-row>\n\n\n               \n            </ion-item>\n        </ion-row>\n        <ion-row>\n            <ion-item>\n                <button (click)="publierAnnonce(annonce)" ion-button  color="sos">Publier</button>\n            </ion-item>\n        </ion-row>\n        \n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n  </ion-content>\n\n\n\n\n  '/*ion-inline-end:"/home/anwar/hanimo2/src/pages/annonce-a0/annonce-a0.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */],
             __WEBPACK_IMPORTED_MODULE_3__providers_annonce_crud_annonce_crud__["a" /* AnnonceCrudProvider */],
             __WEBPACK_IMPORTED_MODULE_4__providers_usercrud_usercrud__["a" /* UsercrudProvider */],

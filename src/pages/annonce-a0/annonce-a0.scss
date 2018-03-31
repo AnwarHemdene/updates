@@ -57,4 +57,37 @@ page-annonce-a0 {
       .category.cat-work{border-bottom-color: #9B5337;}
       .category.cat-work:before{border-top-color: #9B5337;}
       .category.cat-work:after{border-left-color: #9B5337;}
+
+      .button-md-marker{
+            height: 7rem;
+    font-size: 2.3rem;
+    border-radius: 100%;
+    padding: 0px;
+      }
+      .ion-md-locate-marker:before {
+    font-size: 4rem;
+  }
+  .input-wrapper {
+    text-align: center;}
+
+    .swiper-pagination-bullet-active {
+    background: color($colors, sandy-brown);}
+
+    .card-header-md {
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;}
+    .swiper-slide img {
+    margin-top: 8px;}
+      ion-input{
+            color: #444342;
+      }
+
+      .item-input ion-input, .item-input ion-textarea {
+    color: #444342;}
+
+    .row{
+      align-items: center;
+    }
 }

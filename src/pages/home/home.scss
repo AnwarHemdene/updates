@@ -171,20 +171,20 @@ ion-input{
 }
 
 
-.category.aide{border-bottom-color: #C3CCB2;}
-.category.aide:after{border-right-color: #C3CCB2;}
+.category.aide{border-bottom-color: color($colors, aide);}
+.category.aide:after{border-right-color: color($colors, aide);}
 
-.category.foyer{border-bottom-color: #4D898F;}
-.category.foyer:after{border-right-color: #4D898F;}
+.category.foyer{border-bottom-color: color($colors, foyer);}
+.category.foyer:after{border-right-color: color($colors, foyer);}
 
-.category.blessure{border-bottom-color: #BF983E;}
-.category.blessure:after{border-right-color: #BF983E;}
+.category.blessure{border-bottom-color: color($colors, blessure);}
+.category.blessure:after{border-right-color:color($colors, blessure);}
 
-.category.sos{border-bottom-color: #9B5337;}
-.category.sos:after{border-right-color: #9B5337;}
+.category.sos{border-bottom-color: color($colors, sos);}
+.category.sos:after{border-right-color: color($colors, sos);}
 
-.category.autre{border-bottom-color: #333537;}
-.category.autre:after{border-right-color: #333537;}
+.category.autre{border-bottom-color: color($colors, autre);}
+.category.autre:after{border-right-color: color($colors, autre);}
 // ------------------------
 
 

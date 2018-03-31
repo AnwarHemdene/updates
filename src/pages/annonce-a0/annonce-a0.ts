@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams , AlertController , ToastController} from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams , AlertController , ToastController, Slides} from 'ionic-angular';
 
 import { AngularFireAuth } from 'angularfire2/auth';
 import firebase from 'firebase';
@@ -20,6 +20,9 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class AnnonceA0Page {
 
+  @ViewChild(Slides) slides: Slides;
+
+  
   imageNumber : number;
 
   captureDataUrl: any;
@@ -190,6 +193,9 @@ export class AnnonceA0Page {
   
     // }
   
-
+    //Slides :
+    goToSlide() {
+      this.slides.slideTo(2, 500);
+    }
 
   }

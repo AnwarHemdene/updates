@@ -38,30 +38,30 @@ page-poster {
 
    
     .aide{
-         background: #C3CCB2;
+         background:  color($colors, aide);
         // box-shadow:  0 5px 8px 0  #fef65b, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
         
     }
     .foyer{
-        background: #4D898F;
+        background: color($colors, foyer);
         // box-shadow:  0 5px 8px 0 #ff7f50, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         
     }
     .blessure{
-        background: #BF983E;
+        background: color($colors, blessure);
         // box-shadow:  0 5px 8px 0 #008000, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         
     }
     .danger{
-        background: #9B5337;
+        background: color($colors, sos);
         // box-shadow:  0 5px 8px 0 #cc0000, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         
     }
     .autre{
-        background:#333537;
+        background:color($colors, autre);
         // box-shadow:  0 5px 8px 0 #3b5998, 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 
         

@@ -101760,8 +101760,7 @@ page-login .connecter {
 }
 
 page-login .login-button {
-  border-width: 2px;
-  border-color: #F6AA24;
+  color: #52524a;
 }
 
 page-login .facebook-button {

@@ -35,6 +35,9 @@ import { InvitationPage } from '../pages/invitation/invitation';
 import { AnnoncesPage } from "../pages/annonces/annonces";
 import { SearchPage } from "../pages/search/search";
 import { AnnonceA0Page } from "../pages/annonce-a0/annonce-a0";
+import { AnnonceA1Page } from "../pages/annonce-a1/annonce-a1";
+import { AnnonceA3Page } from "../pages/annonce-a3/annonce-a3";
+import { AnnonceA2Page } from "../pages/annonce-a2/annonce-a2";
 
 import { UsercrudProvider } from '../providers/usercrud/usercrud';
 import { AnnonceCrudProvider } from '../providers/annonce-crud/annonce-crud';
@@ -55,7 +58,10 @@ firebase.initializeApp(FIREBASE_CREDENTIALS);
     InvitationPage,
     AnnoncesPage,
     SearchPage,
-    AnnonceA0Page
+    AnnonceA0Page,
+    AnnonceA1Page,
+    AnnonceA2Page,
+    AnnonceA3Page
   ],
   imports: [
     BrowserModule,
@@ -81,7 +87,10 @@ firebase.initializeApp(FIREBASE_CREDENTIALS);
     InvitationPage,
     AnnoncesPage,
     SearchPage,
-    AnnonceA0Page
+    AnnonceA0Page,
+    AnnonceA1Page,
+    AnnonceA2Page,
+    AnnonceA3Page
   ],
   providers: [
     StatusBar,

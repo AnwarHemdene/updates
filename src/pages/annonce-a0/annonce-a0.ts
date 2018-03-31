@@ -19,9 +19,9 @@ import { TabsPage } from '../tabs/tabs';
   templateUrl: 'annonce-a0.html',
 })
 export class AnnonceA0Page {
-
+  //slides:
   @ViewChild(Slides) slides: Slides;
-
+  //end slides
   
   imageNumber : number;
 
@@ -197,5 +197,5 @@ export class AnnonceA0Page {
     goToSlide() {
       this.slides.slideTo(2, 500);
     }
-
+    //end slides
   }

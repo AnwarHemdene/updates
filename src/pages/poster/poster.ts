@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams , AlertController , ToastController} from 'ionic-angular';
 import { AnnonceA0Page } from "../annonce-a0/annonce-a0";
 
+import { AnnonceA1Page } from "../annonce-a1/annonce-a1";
+import { AnnonceA3Page } from "../annonce-a3/annonce-a3";
+import { AnnonceA2Page } from "../annonce-a2/annonce-a2";
 //delete later
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { AnnonceCrudProvider } from "../../providers/annonce-crud/annonce-crud";
@@ -28,9 +31,29 @@ export class PosterPage {
     });
   }
 
-  presentPrompt() {
+  goToAide(){
+this.navCtrl.push(AnnonceA3Page);
+  }
 
+goToFoyer(){
+    this.navCtrl.push(AnnonceA2Page);
+  }
+
+goToBlessure(){
+    this.navCtrl.push(AnnonceA1Page);
+  }
+
+  goToDanger(){
     this.navCtrl.push(AnnonceA0Page);
+  }
+
+  goToAutre(){
+    
+  }
+
+  // presentPrompt() {
+
+  //   this.navCtrl.push(AnnonceA0Page);
 
 
     // let alert = this.alertCtrl.create({
@@ -69,6 +92,6 @@ export class PosterPage {
     //   ]
     // });
     // alert.present();
-  }
+  // }
 
 }

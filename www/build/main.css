@@ -102331,10 +102331,16 @@ page-signup .center {
   margin-left: 35%;
   margin-right: auto;
   width: 60%;
+  font-size: 7rem;
+  color: #5E584B;
+  /*text-align: center;*/
+  margin: 0px;
+  margin-left: 35%;
 }
 
 page-signup .connecter {
   text-align: center;
+  margin-top: 5px;
 }
 
 page-signup .col {
@@ -102354,5 +102360,9 @@ page-signup .login-button {
 }
 
 page-signup ion-input {
-  border-bottom: #53524A solid 1px;
+  border-bottom: #F5BA52 solid 1px;
+}
+
+page-signup .label-md {
+  margin: 0px;
 }
